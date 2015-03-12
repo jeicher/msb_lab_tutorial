@@ -1,0 +1,167 @@
+%        File: durps.tex
+%     Created: Thu Jun 26 10:00 PM 2014 S
+% Last Change: Thu Jun 26 10:00 PM 2014 S
+%
+\documentclass[a4paper]{article}
+%\documentclass{scrartcl}
+%\usepackage[utf8]{inputenc}
+%\usepackage[english]{babel}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage[cm]{fullpage}
+\usepackage[]{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\setlength{\parindent}{0pt}
+\usepackage{txfonts}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt}
+%\cfoot{\textcopyright 2014 Johann Eicher}
+
+\newcommand{\dc}{~$^{\circ}$C}
+\newcommand{\ec}{\textit{E. coli}}
+
+
+
+%\titlespacing*{\section}
+%{0pt}{1.5ex plus 0.5ex minus .2ex}{1ex plus .2ex}
+%\titlespacing*{\subsection}
+%{0pt}{1.5ex plus 0.5ex minus .2ex}{1ex plus .2ex}
+
+\begin{document} \begin{center} \huge Introductory tutorial to bacterial growth and kinetic assays in the Molecular
+Systems Biology Group\\ \normalsize \end{center} \begin{multicols}{2}
+
+This tutorial serves as a practical introduction to the typical experimental
+work performed in the Molucalar Systems Biology lab.
+
+\section{Sterile technique} 
+
+When working with microorganisms almost all work is done under sterile
+conditions to prevent contamination, and solutions prepared under non-sterile
+conditions are subsequently sterilised by autoclaving. Contaminating bacteria,
+yeast and fungi live on almost everything and float around in the laboratory
+air. When using sterile technique, the following guidelines apply:
+
+\begin{enumerate}
+\item Work in the laminar flow hood which provides positive pressure (make sure the sterilising UV light is turned off whilst working the hood, and on otherwise).
+\item Always wear latex gloves OR regularly sterilise hands with a 70~\% ethanol solution.
+\item Flame bottlenecks with a bunsen burner whenever they are opened or used, and flame inoculating loops before each inoculation. Hockey-sticks should be kept in 70~\% ethanol and flamed before use.
+\item Only use autoclaved pipette tips.
+\end{enumerate}
+
+
+\section{Growing \textit{Escherichia coli}} 
+
+\ec\ is typically grown in LB medium for bulk preparation of cell matter,
+however for reproducible physiological and/or kinetic studies a defined medium
+such as M9 minimal medium has to be used. The following recipes can be scaled
+to the desired volume.
+
+To demonstrate the typical growth process of \ec\ the following steps will be
+taken:
+
+\begin{enumerate}
+\item prepare either LB or M9 medium
+\item inoculate a 5~ml culture from a freezer stock of \ec\ and allow it to grow overnight (O/N)
+\item use the O/N culture to inoculate a large culture and incubate on a shaker at 37\dc
+\item monitor cell growth using a spectrophotometer
+\end{enumerate}
+
+\subsection{Lysogeny broth (LB) medium} 
+
+This is a rich medium composed of tryptic digests of casein (peptides), yeast
+extract (vitamins, trace elements), and NaCl. As the exact composition of
+constituents in tryptone and yeast extracts is unknown and will vary per batch,
+LB medium is not recommended for physiological and kinetic studies, but rather
+for bulk growing of bacteria (e.g. for protein expression).
+
+To prepare 1~l of LB medium, dissolve the following components in water
+(distilled water or preferably milli-Q) in a beaker with a magnetic spinner:
+
+\begin{center}
+\begin{tabular}[h]{rc} \toprule
+10~g    &tryptone \\ 
+5~g     &yeast extract\\ 
+10~g    &NaCl\\ \bottomrule
+\end{tabular}
+\end{center}
+
+As a precaution it is possible at this stage to adjust the pH of the solution
+but is probably unnecessary. The solution can now be decanted into an
+Erlenmeyer flask with a cotton wool bung and foil covering the neck (note that
+for adequate aeration a 1~l culture should be grown in a 3~l Erlenmeyer flask)
+and autoclaved (usually at 121\dc for 15-20 min).
+
+\subsection{M9 minimal medium}
+
+M9 is a minimal medium with clearly defined components ideal for physiological
+and kinetic studies. Minimal media force the organism to produce the majority
+of the required metabolites, vitamins, co-factors endogenously and only
+provides the bare minimum of components exogenously in the medium. Unlike LB
+medium, M9 medium is buffered by the two phosphate components HPO$_4^{2-}$ and
+H$_2$PO$_4^{1-}$. It is thus imperative that care is taken during preparation to
+include the correct forms of the phosphate salt!
+
+To prepare 1~l of M9 medium, dissolve the following in 977~ml of water (milli-Q is
+preferred for reproducibility) in a beaker with a magnetic spinner:
+
+\begin{center}
+\begin{tabular}[h]{rc} \toprule
+12.8 g  & Na$_2$HPO$_4$.7H$_2$O \textbf{OR}\\
+6.0 g  & Na$_2$HPO$_4$\\\midrule
+3.0 g  & KH$_2$PO$_4$\\
+0.5 g   & NaCl\\
+1.0 g   & NH$_4$Cl\\ \bottomrule
+\end{tabular}
+\end{center}
+
+Also prepare a 20\% w/v glucose solution in milli-Q water (typically glucose,
+sodium gluconate or glycerol are used as carbon sources); 500~ml is enough for
+25~l of M9 medium.  Glucose solutions may take a while to dissolve fully, but
+if left stirring with a magnetic stirrer the clumps will eventually disperse.
+
+Transfer the glucose solution to a Schott bottle and the M9 salts to an
+Erlenmeyer flask with a cotton-wool bung and foil covering the neck of the
+flask (note that for adequate aeration a 1~l culture should be grown in a 3~l
+Erlenmeyer flask). Autoclave these solutions (usually at 121\dc for 15-20 min).
+The reason for autoclaving the salts and sugars separately is that when
+autoclaved together the sugars are typically caramelised, especially when
+phosphates are present.
+
+While the glucose and salt solutions are being autoclaved, prepare the
+following two constituents. Once prepared, they should be filter sterilised
+using a 50~ml syringe and a 0.2~$\mathrm{\muup m}$ syringe filter into 50~ml
+Falcon tubes and stored at 4\dc\ (use a new filter for each solution):
+
+\begin{itemize}
+\item 50~ml 1~M MgSO$_4$
+\item 50~ml 0.1~M CaCl$_2$
+\end{itemize}
+
+To prepare 1~l of M9 medium add the following under sterile conditions to the
+977~ml M9 salts autoclaved salts in the Erlenmeyer flask:
+
+\begin{center}
+\begin{tabular}[h]{rc} \toprule
+20~ml   & 20~\% carbon source (0.2~\% final)\\
+2~ml    & 1~M MgSO$_4$\\
+1~ml    & 0.1~M CaCl$_2$\\ \bottomrule
+\end{tabular}
+\end{center}
+
+As a precaution it is possible at this stage to adjust the pH of the solution
+which will be buffered around 7.2. This is generally unncecessary for growth of
+\ec.
+
+
+\subsection{Batch growth}
+Typical aerobic bacterial batch cultures are grown by shaking in Erlenmeyer flasks. 
+
+
+
+
+\end{multicols} \end{document}
+
+

@@ -1,0 +1,15 @@
+*~
+*.aux
+*.nav
+*.log
+*.ps
+*.snm
+*.toc
+*.dvi
+*.out
+*.backup
+*.bak
+*.synctex*
+*.bbl
+*.blg
+*.okular
