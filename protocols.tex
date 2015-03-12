@@ -34,6 +34,10 @@ typical experimental work performed in the Molucalar Systems Biology lab. \ec\
 cells will be grown from freezer stocks, and cell lysates will be prepared and
 used in a simple lactate dehydrogenase kinetic assay.
 
+It is assumed that the person performing these experiments will have received
+proper instruction with regard to the safety protocols and equipment booking
+systems in the department.
+
 \section{Sterile technique} 
 
 When working with microorganisms almost all work is done under sterile
@@ -79,6 +83,9 @@ adjusted to prepare the desired amount of medium. For the purposes of this
 introduction a 50~ml overnight culture and a large 500~ml culture will be
 sufficient.
 
+The general buffer for cell washing, lysis, and kinetic assays used in this
+introduction is 100~mM TRIS at pH~7.0. 500~ml of this buffer is sufficient and
+should be prepared beforehand and autoclaved (121\dc\ for 15-20 min).
 
 \subsection{Lysogeny broth (LB) medium} 
 
@@ -92,7 +99,7 @@ To prepare 1~l of LB medium, dissolve the following components in water
 (distilled water or preferably milli-Q) in a beaker with a magnetic spinner:
 
 \begin{center}
-\begin{tabular}[h]{rc} \toprule
+\begin{tabular}[h]{rl} \toprule
 10~g    &tryptone \\ 
 5~g     &yeast extract\\ 
 10~g    &NaCl\\ \bottomrule
@@ -121,7 +128,7 @@ To prepare 1~l of M9 medium, dissolve the following in 977~ml of water (milli-Q 
 preferred for reproducibility) in a beaker with a magnetic spinner:
 
 \begin{center}
-\begin{tabular}[h]{rc} \toprule
+\begin{tabular}[h]{rl} \toprule
 12.8 g  & Na$_2$HPO$_4$.7H$_2$O \textbf{OR}\\
 6.0 g  & Na$_2$HPO$_4$\\\midrule
 3.0 g  & KH$_2$PO$_4$\\
@@ -160,7 +167,7 @@ To prepare 1~l of M9 medium add the following under sterile conditions to the
 977~ml M9 salts autoclaved salts in the Schott bottle:
 
 \begin{center}
-\begin{tabular}[h]{rc} \toprule
+\begin{tabular}[h]{rl} \toprule
 20~ml   & 20~\% carbon source (0.2~\% final)\\
 2~ml    & 1~M MgSO$_4$\\
 1~ml    & 0.1~M CaCl$_2$\\ \bottomrule
@@ -255,7 +262,7 @@ $\pm$1~g tolerance).
 
 Centrifuge the two bottles using a JA-10 rotor at 7000~rpm for 10~min at 4\dc.
 After centrifugation a large cell pellet will have formed on the bottom of the
-bottle with cells. Pour off the supernatant, add about 20~ml of buffer and
+bottle with cells. Pour off the supernatant, add about 20~ml of 100~mM TRIS buffer and
 resuspend the pellet by holding the centrifuge bottle on a vortexer. After the
 pellet is resuspended, transfer the cell suspension to a 50~ml falcon tube and
 place it on ice. Divide the cell suspension into about 20 $\times$ 1~ml
@@ -265,8 +272,121 @@ Centrifuge the 20 Eppendorf tubes in a benchtop centrifuge at 13,500~rpm for 7
 min, pour off the supernatants and store the tubes with cell pellets at -80\dc.
 At this temperature cell pellets are stable for years.
 
+\section{Kinetic assay} As this is an introduction to kinetic assays a simple
+lactate dehydrogenase (LDH) assay will suffice. LDH converts pyruvate to
+lactate whilst reoxidising NADH to NAD$^+$. Assays involving the light
+spectrometer usually measure the consumpution or production of NADH. This often
+means that a series of enzymes must be included in an assay to couple the
+reaction of interest to NADH. This is not necessary with LDH as it directly
+consumes NADH.
+
+\subsection{Preparing a cell lysate}
+
+Many methods are available for cell lysis with viable proteins involving glass
+beads, sonication, french-pressing, bead-milling, and lysozyme. Grinding the
+cells with glass beads is gentle enough to retain the activity of the enzymes
+whilst yielding a large amount of protein.
+
+To perform a glass bead extraction, cells are resuspended in a solution with
+tiny glass beads and vortexed. Retrieve a cell pellet from the -80\dc\ freezer
+and resuspend it in 1~ml of 100~mM TRIS buffer. The ideal ratio of glass beads
+is 1~g/ml of cell suspension, so add 1~g of 0.1~\micro m glass beads to the
+cell suspension, and transfer the whole suspension to a 1.5~cm diameter glass
+test tube.
+
+Perform the extraction by vortexing the test tube on full power for 6 minutes
+in total whilst resting once every minute by placing the tube on ice for 15~s
+to prevent heating of the sample. Note that typically it is advised to include
+protease inhibitors during this stage to prevent the proteases released from
+the cell's periplasm from degrading the enzymes of interest (e.g. PMSF). For
+our purposes this is unnecessary as LDH is a relatively stable enzyme and shows
+little degradation.
+
+Once the grinding process is complete, pour the slurry into an Eppendorf tube
+and centrifuge it using the benchtop centrifuge at 13,500~rpm for 5~min
+(remember to balance it). Transfer the supernatant to a new tube and keep it on
+ice; discard the tube with the glass beads.
+
+\subsection{Lactate dehydrogenase assay}
+
+pyruvate + NADH $\rightarrow$ lactate + NAD$^+$
+
+The LDH assay will be performed by varying the concentration of the substrate
+pyruvate until the enzyme is saturated with substrate, and measuring the rate
+of the reaction at each of these steps.
+
+Prepare the following solutions in 100~mM TRIS:
+
+\begin{itemize}
+\item 1~ml 200~mM pyruvate
+\item 1~ml 4~mM NADH 
+\end{itemize}
+
+This assay will be performed using a 5-fold dilution series of the substrate
+pyruvate in a 96-well plate with each of the five reaction wells having a final
+volume of 100~\micro l. Prepare the following mix which excludes pyruvate and
+is sufficient for ten reactions. Then pipette 90~ul into each of five wells on
+a 96-well plate:
+
+\begin{center}
+\begin{tabular}[h]{rl} \toprule
+10~\micro l & cell lysate\\ 
+10~\micro l & 4~mM NADH (final conc. = 0.4~mM)\\ 
+70~\micro l & 100~mM TRIS\\ \bottomrule
+\end{tabular}
+\end{center}
+
+Now, prepare a 1:2 dilution series of pyruvate. This can be done in Eppendorf
+tubes or conveniently in a series of adjacent wells on the 96-well plate by
+diluting each step with 50~\% TRIS (bear in mind that the maximum volume of the
+wells is 250~\micro l). The final concentrations in each tube/well should be
+200, 100, 50, 25, 12.5~mM.
+
+After inserting the plate and initialising the plate reader it is always good
+practice to monitor the levels of NADH at 340~nm to ensure that they are
+stable, and to allow the wells to equilibrate with the set temperature (25~\dc\
+is fine). The other benefit of making the substrate dilution series in adjacent
+wells is that the temperature is the same in the substrate and reaction wells.
+The reaction can be initiated by pipetting 10~\micro l of pyruvate into each
+reaction well. If a the substrate is in a series of wells then a multipipette
+may be used, otherwise pipette each well individually starting at the lowest
+concentration (to avoid losing too much data with the faster high concentration
+reactions). Start the experiment which should measure NADH at 340~nm every 6~s
+for about 10~min. Note that these assays are typically performed in triplicate
+to be able to report a standard error.
 
 
+
+\subsection{Protein determination -- the Bradford assay}
+
+One final step is necessary: to determine the amount of protein present in the
+cell lysate. This will be done using the Bradford assay. The Bradford reagent
+contains Coomassie Brilliant Blue G-250 dye, which binds to protein and forms a
+blue colour that can be measured at 595~nm. The following solutions will be
+necessary for the assay:
+
+\begin{itemize}
+\item 1~ml 1~mg/ml bovine serum albumin (BSA)
+\item a bottle of Bradford reagent stored in the laboratory refrigerator 
+\end{itemize}
+
+To perform the assay, a 4-fold 1:2 dilution series of the BSA must be made
+either in Eppendorf tubes or in adjacent well of a 96-well plate. This will be
+the protein standard with final concentrations of 1, 0.5, 0.25, 0.125~mg/ml.
+Likewise a 4-fold 1:4 dilution series of the cell lysate must be made in
+Eppendorfs or in the wells of a 96-well plate. 295~\micro l of the Bradford
+reagent is pipetted into eight wells (four for the BSA standard, four for the
+lysate), to which 5~\micro l of each protein solution is added (four
+concentrations of BSA, four concentrations of lysate). After allowing the
+reaction a few minutes to complete, measure the absorbance on a plate-reader at
+595~nm.
+
+By fitting a straight line function to the BSA standard points, the
+concentration of the original cell lysate can be extrapolated back from the
+cell lysate dilution series. A lysate dilution should be selected for
+extrapolation that produces a reading within the range of the calibration curve
+produced by the BSA dilution series. Note that these assays are typically
+performed in triplicate to be able to report a standard error.
 
 
 \end{multicols} \end{document}
