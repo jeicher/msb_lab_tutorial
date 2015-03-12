@@ -13,7 +13,7 @@
 \usepackage[]{graphicx}
 \usepackage{booktabs}
 \usepackage{tabularx}
-\setlength{\parindent}{0pt}
+%\setlength{\parindent}{0pt}
 \usepackage{txfonts}
 %\usepackage{fancyhdr}
 %\pagestyle{fancy}
@@ -22,19 +22,17 @@
 
 \newcommand{\dc}{~$^{\circ}$C}
 \newcommand{\ec}{\textit{E. coli}}
+\newcommand{\micro}{$\muup$}
+\newcommand{\od}{OD$_{600}$}
 
+\begin{document} \begin{center} \huge Introductory tutorial to bacterial growth
+and kinetic assays in the Molecular Systems Biology Group\\ \normalsize
+\end{center} 
 
-
-%\titlespacing*{\section}
-%{0pt}{1.5ex plus 0.5ex minus .2ex}{1ex plus .2ex}
-%\titlespacing*{\subsection}
-%{0pt}{1.5ex plus 0.5ex minus .2ex}{1ex plus .2ex}
-
-\begin{document} \begin{center} \huge Introductory tutorial to bacterial growth and kinetic assays in the Molecular
-Systems Biology Group\\ \normalsize \end{center} \begin{multicols}{2}
-
-This tutorial serves as a practical introduction to the typical experimental
-work performed in the Molucalar Systems Biology lab.
+\begin{multicols}{2} This tutorial serves as a practical introduction to the
+typical experimental work performed in the Molucalar Systems Biology lab. \ec\
+cells will be grown from freezer stocks, and cell lysates will be prepared and
+used in a simple lactate dehydrogenase kinetic assay.
 
 \section{Sterile technique} 
 
@@ -42,22 +40,29 @@ When working with microorganisms almost all work is done under sterile
 conditions to prevent contamination, and solutions prepared under non-sterile
 conditions are subsequently sterilised by autoclaving. Contaminating bacteria,
 yeast and fungi live on almost everything and float around in the laboratory
-air. When using sterile technique, the following guidelines apply:
+air. When using sterile technique, the following minimal guidelines apply:
 
-\begin{enumerate}
-\item Work in the laminar flow hood which provides positive pressure (make sure the sterilising UV light is turned off whilst working the hood, and on otherwise).
-\item Always wear latex gloves OR regularly sterilise hands with a 70~\% ethanol solution.
-\item Flame bottlenecks with a bunsen burner whenever they are opened or used, and flame inoculating loops before each inoculation. Hockey-sticks should be kept in 70~\% ethanol and flamed before use.
-\item Only use autoclaved pipette tips.
+\begin{enumerate} 
+\item Work in the laminar flow hood which provides positive
+pressure (make sure the sterilising UV light is turned off whilst working the
+hood, and on otherwise).  
+\item Always wear latex gloves OR regularly sterilise
+hands with a 70~\% ethanol solution.  
+\item Flame bottlenecks with a bunsen
+burner whenever they are opened or used, and flame inoculating loops before
+each inoculation. Hockey-sticks should be kept in 70~\% ethanol and flamed
+before use.  
+\item Only use autoclaved pipette tips.  
 \end{enumerate}
 
+Note also that when using shakers and centrifuges to observe correct protocol
+and ensure that flasks or centrifuge rotors are balanced.
 
 \section{Growing \textit{Escherichia coli}} 
 
 \ec\ is typically grown in LB medium for bulk preparation of cell matter,
 however for reproducible physiological and/or kinetic studies a defined medium
-such as M9 minimal medium has to be used. The following recipes can be scaled
-to the desired volume.
+such as M9 minimal medium has to be used.
 
 To demonstrate the typical growth process of \ec\ the following steps will be
 taken:
@@ -68,6 +73,12 @@ taken:
 \item use the O/N culture to inoculate a large culture and incubate on a shaker at 37\dc
 \item monitor cell growth using a spectrophotometer
 \end{enumerate}
+
+The following general guidelines for preparing LB or M9 medium should be
+adjusted to prepare the desired amount of medium. For the purposes of this
+introduction a 50~ml overnight culture and a large 500~ml culture will be
+sufficient.
+
 
 \subsection{Lysogeny broth (LB) medium} 
 
@@ -89,20 +100,22 @@ To prepare 1~l of LB medium, dissolve the following components in water
 \end{center}
 
 As a precaution it is possible at this stage to adjust the pH of the solution
-but is probably unnecessary. The solution can now be decanted into an
-Erlenmeyer flask with a cotton wool bung and foil covering the neck (note that
-for adequate aeration a 1~l culture should be grown in a 3~l Erlenmeyer flask)
-and autoclaved (usually at 121\dc for 15-20 min).
+but is probably unnecessary. The solution can now be decanted into Erlenmeyer
+flasks, each with a cotton wool bung and foil covering the mouth (note that for
+adequate aeration a 1~l culture should be grown in a 3~l flask, and
+a 500~ml culture in a 2~l flask) and autoclaved (usually at 121\dc\ for 15-20
+min).
 
 \subsection{M9 minimal medium}
 
-M9 is a minimal medium with clearly defined components ideal for physiological
-and kinetic studies. Minimal media force the organism to produce the majority
-of the required metabolites, vitamins, co-factors endogenously and only
-provides the bare minimum of components exogenously in the medium. Unlike LB
-medium, M9 medium is buffered by the two phosphate components HPO$_4^{2-}$ and
-H$_2$PO$_4^{1-}$. It is thus imperative that care is taken during preparation to
-include the correct forms of the phosphate salt!
+M9 is a minimal medium with clearly defined components making it ideal for
+reproducible physiological and kinetic studies. Minimal media force the
+organism to produce the majority of the required metabolites, vitamins,
+and co-factors endogenously and only provides the bare minimum of components
+exogenously in the medium. Unlike LB medium, M9 medium is buffered by the two
+phosphate components HPO$_4^{2-}$ and H$_2$PO$_4^{1-}$. It is thus imperative
+that care is taken during preparation to include the correct forms of the
+phosphate salt!
 
 To prepare 1~l of M9 medium, dissolve the following in 977~ml of water (milli-Q is
 preferred for reproducibility) in a beaker with a magnetic spinner:
@@ -122,18 +135,21 @@ sodium gluconate or glycerol are used as carbon sources); 500~ml is enough for
 25~l of M9 medium.  Glucose solutions may take a while to dissolve fully, but
 if left stirring with a magnetic stirrer the clumps will eventually disperse.
 
-Transfer the glucose solution to a Schott bottle and the M9 salts to an
-Erlenmeyer flask with a cotton-wool bung and foil covering the neck of the
-flask (note that for adequate aeration a 1~l culture should be grown in a 3~l
-Erlenmeyer flask). Autoclave these solutions (usually at 121\dc for 15-20 min).
-The reason for autoclaving the salts and sugars separately is that when
-autoclaved together the sugars are typically caramelised, especially when
+Transfer the M9 salts and glucose solutions to Schott bottles and prepare some
+Erlenmeyer flasks for culturing by inserting a cotton wool bung into the mouth
+of each flask and cover the mouth with foil (note that for adequate aeration a
+1~l culture should be grown in a 3~l flask, and a 500~ml culture in a 2~l
+flask). Autoclave these solutions and empty flasks (usually at 121\dc\ for
+15-20 min).  The reason for autoclaving the salts and sugars separately is that
+when autoclaved together the sugars are often caramelised, especially when
 phosphates are present.
 
 While the glucose and salt solutions are being autoclaved, prepare the
 following two constituents. Once prepared, they should be filter sterilised
-using a 50~ml syringe and a 0.2~$\mathrm{\muup m}$ syringe filter into 50~ml
-Falcon tubes and stored at 4\dc\ (use a new filter for each solution):
+using a 50~ml syringe and a 0.2~\micro m syringe filter into 50~ml
+Falcon tubes and stored at 4\dc\ (use a new filter for each solution, the
+solutions can be reused for subsequent cultures as long as they do not become
+contaminated):
 
 \begin{itemize}
 \item 50~ml 1~M MgSO$_4$
@@ -141,7 +157,7 @@ Falcon tubes and stored at 4\dc\ (use a new filter for each solution):
 \end{itemize}
 
 To prepare 1~l of M9 medium add the following under sterile conditions to the
-977~ml M9 salts autoclaved salts in the Erlenmeyer flask:
+977~ml M9 salts autoclaved salts in the Schott bottle:
 
 \begin{center}
 \begin{tabular}[h]{rc} \toprule
@@ -152,16 +168,116 @@ To prepare 1~l of M9 medium add the following under sterile conditions to the
 \end{center}
 
 As a precaution it is possible at this stage to adjust the pH of the solution
-which will be buffered around 7.2. This is generally unncecessary for growth of
-\ec.
+which will be buffered around 7.2 by adding sterilised NaOH/HCl. This is
+generally unncecessary for growth of \ec.
+
+This M9 medium may now be decanted into Erlenmeyer flasks for culturing.
 
 
-\subsection{Batch growth}
-Typical aerobic bacterial batch cultures are grown by shaking in Erlenmeyer flasks. 
+\subsection{Batch growth -- overnight cultures} 
+
+Bacterial stocks are typically frozen at -80\dc\ in a 50~\% glycerol solution
+to protect the cells from being damaged by ice crystals. To bring the cells out
+of the deep stationary phase they experience at such low temperatures we
+usually start by growing a small O/N culture which is used on the following day
+to inoculate a larger culture. Inoculating directly from freezer stocks is
+possible, but typically involves such a long lag period as the cells ``wake
+up'' that it is more convenient to start with O/N culturing. Additionally, O/N
+culturing allows one to predefine the starting optical density of a culture.
+
+Typical aerobic bacterial batch cultures are grown by
+shaking in Erlenmeyer flasks. \ec\ are grown in a 37\dc\ room with sufficient
+shaking to continuously ``fold'' air into the medium.
+
+To inoculate a 50~ml O/N culture, fetch a freezer stock of \ec\ cells in an
+ice-box. After allowing the sample to thaw, using sterile technique in the
+laminar flow hood, inoculate the 50~ml culture with 20~\micro l of cells.
+Return the freezer stock to the -80\dc\ freezer, and place the O/N culture on a
+shaker in the 37\dc\ room. This culture will be ready tomorrow!
+
+It is a good practice to leave the uninoculated large culture on a shelf in the
+37~\dc\ room over night as well so that in the morning it will be at the
+correct temperature for growth.
+
+
+\subsection{Batch growth -- the large culture}
+
+On the day following the growth of the O/N culture, retreive it (and the
+uninoculated large culture) from the 37\dc\ room. Typically bacterial cultures
+are inoculated to a final optical density at 600~nm (\od) of 0.05-0.1. To be
+able to do this one has to determine the \od\ of the O/N culture and inoculate
+the larger culture with enough to achieve the correct OD. Note that any steps
+in which cells are either removed or added to a culture are to be performed
+under sterile conditions. \od\ determinations themselves do not need to be
+sterile as the contents of the cuvettes are discarded afterwards.
+
+After a night of growth the 50~ml culture should be at an \od\ of about 1.2. As
+the linear range of most spectrophotometers is 0.1-1.0, the O/N culture will
+need to be diluted to measure the \od\ (a 1:2 dilution should be sufficient).
+Once the \od\ has been determined, inoculate the large culture to a final \od\
+of 0.1, and place it on a shaker in the 37~\dc\ room. It may be useful to
+double check that the culture is in fact at an \od\ of 0.1 after inoculation.
+
+Bacterial cultures undergo four phases of growth in a batch culture:\\
+\begin{enumerate} \item Lag phase -- this is a phase in which no growth takes
+place and are traditionally thought to be adjusting the new medium\footnote{It
+has been shown that in fact a small persister population is growing
+exponentially in the background during this phase but the growth is masked by
+the presence of a large static population which results in what appears to be a
+``lag'' in growth; eventually the persister population grows large enough to
+take over the culture.} \item Log phase -- at this stage the cells are growing
+exponentially \item Stationary phase -- exhaustion of nutrients and the
+accumulation of toxic metabolic products causes the cells to stop growing in
+this phase \item Death phase -- continued lack of nutrients and exposure to
+toxic compounds causes the cells to gradually die off \end{enumerate}
+
+For kinetic assays cells are typically harvested in mid-log phase to ensure
+that all the cells are configured similarly and are exhibiting maximal growth
+without being subject to external effects from nutrient limitation or the
+accumulation of toxins.
+
+To determine when the cells have hit mid-log phase an \od\ determination (using
+1~ml of culture, retreived under sterile conditions) should be made every
+30~min. Plotting \od\ on a semilog axis will result in a straight line in
+log-phase. \ec\ growing aerobically usually reach mid-log phase after about
+3-4~hrs and for the purposes of this introduction can be harvested at an \od\
+of 0.8.
+
+\subsection{Cell harvesting} Cells will be harvested for subsequent experiments
+by centrifugation. Sterile technique is no longer necessary from this stage
+onward.
+
+Retreive the 500~ml culture from the 37\dc\ room and decant it into a Beckman
+500~ml centrifuge bottle. Weigh the complete bottle including the plug and cap
+on a laboratory scale, and prepare a second bottle for balancing the centrifuge
+rotor by filling it with water to the same weight (centrifuges typically have a
+$\pm$1~g tolerance).
+
+Centrifuge the two bottles using a JA-10 rotor at 7000~rpm for 10~min at 4\dc.
+After centrifugation a large cell pellet will have formed on the bottom of the
+bottle with cells. Pour off the supernatant, add about 20~ml of buffer and
+resuspend the pellet by holding the centrifuge bottle on a vortexer. After the
+pellet is resuspended, transfer the cell suspension to a 50~ml falcon tube and
+place it on ice. Divide the cell suspension into about 20 $\times$ 1~ml
+aliquots in Eppendorf tubes.
+
+Centrifuge the 20 Eppendorf tubes in a benchtop centrifuge at 13,500~rpm for 7
+min, pour off the supernatants and store the tubes with cell pellets at -80\dc.
+At this temperature cell pellets are stable for years.
+
 
 
 
 
 \end{multicols} \end{document}
+
+
+
+
+
+
+
+
+
 
 
